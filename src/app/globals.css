@@ -1,26 +1,158 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-elevated: var(--bg-elevated);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-gradient-primary: var(--gradient-primary);
+
+  --font-playfair: var(--font-playfair);
+  --font-dm: var(--font-dm);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    position: relative;
+    --bg-primary: #ffffff;
+    --bg-card: #f9fafb;
+    --bg-elevated: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --accent: #3B82F6;
+    --accent-hover: #2563EB;
+    --gradient-primary: linear-gradient(to right, #3B82F6, #22D3EE);
+  }
+
+  body {
+    position: relative;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-dm), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Font utility classes ── */
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+.font-dm {
+  font-family: var(--font-dm), sans-serif;
+}
+
+/* ── Hero CSS Animations (no JS needed — visible from first paint) ── */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroSlideUp {
+  from { transform: translateY(80px); }
+  to { transform: translateY(0); }
+}
+
+.hero-fade-in {
+  animation: heroFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-slide-up {
+  animation: heroSlideUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Animations ── */
+@keyframes stepCarousel {
+  0%, 20.83% { transform: translateX(0%); }
+  25%, 45.83% { transform: translateX(-12.5%); }
+  50%, 70.83% { transform: translateX(-25%); }
+  75%, 95.83% { transform: translateX(-37.5%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-step-carousel {
+  animation: stepCarousel 16s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+@keyframes cursorWander {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(15px, 25px); }
+  40% { transform: translate(-20px, 10px); }
+  60% { transform: translate(10px, -15px); }
+  80% { transform: translate(-10px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.animate-cursor-wander {
+  animation: cursorWander 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* ── FinalCTA marquee & typewriter (moved from inline <style>) ── */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-scroll {
+  animation: marquee-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes typewriter {
+  0%   { width: 0; opacity: 1; }
+  5%   { width: 0; opacity: 1; }
+  35%  { width: 11ch; opacity: 1; }
+  55%  { width: 11ch; opacity: 1; }
+  75%  { width: 0; opacity: 1; }
+  85%  { width: 0; opacity: 0.4; }
+  90%  { width: 0; opacity: 1; }
+  95%  { width: 0; opacity: 0.4; }
+  100% { width: 0; opacity: 1; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: rgba(255,255,255,0.4); }
+  50% { border-color: transparent; }
+}
+
+.brand-typewriter {
+  animation:
+    typewriter 4.5s steps(11) infinite,
+    blink-caret 0.6s step-end infinite;
+}
+
+/* ── Performance Utilities ── */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+.perf-contain {
+  contain: layout style paint;
+}
+
+/* ── Accessibility: Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Mobile: Eliminate 300ms Tap Delay ── */
+a, button, [role="button"], input, select, textarea {
+  touch-action: manipulation;
 }
