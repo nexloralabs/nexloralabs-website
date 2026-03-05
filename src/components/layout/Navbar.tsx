@@ -66,12 +66,12 @@ export default function Navbar() {
                         }
                         setMobileOpen(false);
                     }}>
-                        <div className="relative w-[200px] h-[48px]">
+                        <div className="relative w-[250px] h-[56px]">
                             <Image
                                 src="/logo.webp"
                                 alt="Nexlance.tech Logo"
                                 fill
-                                sizes="200px"
+                                sizes="250px"
                                 className="object-contain object-left"
                                 priority
                             />
