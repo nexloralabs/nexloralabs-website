@@ -115,7 +115,6 @@ export default function Hero() {
     const [wordIdx, setWordIdx] = useState(0);
 
     useEffect(() => {
-        // eslint-disable-next-line react-hooks/set-state-in-effect -- interval-driven animation cycling
         const t = setInterval(() => setWordIdx(i => (i + 1) % words.length), 2400);
         return () => clearInterval(t);
     }, []);
