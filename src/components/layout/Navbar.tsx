@@ -56,31 +56,39 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: -14 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease }}
-                    className={`pointer-events-auto flex items-center justify-between px-4 py-2 rounded-2xl border transition-all duration-500 ${pill}`}
+                    className={`pointer-events-auto flex items-center justify-between pl-0 pr-1 h-[48px] rounded-full border shadow-sm transition-all duration-500 ${pill} overflow-hidden`}
                 >
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center" onClick={(e) => {
+                    {/* Left side: Logo */}
+                    <Link href="/" className="flex items-center h-full mr-auto overflow-hidden rounded-l-full" onClick={(e) => {
                         if (window.location.pathname === '/') {
                             e.preventDefault();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                         }
                         setMobileOpen(false);
                     }}>
-                        <div className="relative w-[250px] h-[56px]">
+                        {/* 
+                            Aggressively scaled the logo to remove white space from the image file.
+                            Using strong negative margin to literally push it out past the transparent padding
+                            so the actual visible pixels touch the exact left corner of the navbar.
+                        */}
+                        <div className="relative w-[190px] sm:w-[210px] h-[56px] flex items-center ml-[-16px] sm:ml-[-20px]">
                             <Image
                                 src="/logo.webp"
                                 alt="Nexlance.tech Logo"
                                 fill
-                                sizes="250px"
-                                className="object-contain object-left"
+                                sizes="320px"
+                                className="object-contain object-left scale-[2.2] sm:scale-[2.4] origin-left"
                                 priority
                             />
                         </div>
                     </Link>
 
-                    {/* Hamburger button */}
+                    {/* Vertical Divider / Line separator */}
+                    <div className="w-[1.5px] h-[22px] bg-gray-200 mx-2 flex-shrink-0 rounded-full" />
+
+                    {/* Right side: Hamburger button */}
                     <button
-                        className="w-9 h-9 rounded-full border border-gray-100 bg-gray-50/80 flex items-center justify-center text-gray-600 active:scale-95 transition-all cursor-pointer"
+                        className="w-[38px] h-[38px] flex-shrink-0 rounded-full bg-gray-50/80 hover:bg-gray-100 flex items-center justify-center text-gray-700 active:scale-95 transition-all cursor-pointer"
                         onClick={() => setMobileOpen(v => !v)}
                         aria-label="Toggle menu"
                     >
