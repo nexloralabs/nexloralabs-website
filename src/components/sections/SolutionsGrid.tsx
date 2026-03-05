@@ -85,6 +85,7 @@ function TiltCard({ children, className, style }: { children: React.ReactNode; c
     const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-6, 6]), { stiffness: 300, damping: 30 });
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- reading device capability on mount, legitimate one-time sync
         setIsTouch('ontouchstart' in window || navigator.maxTouchPoints > 0);
     }, []);
 

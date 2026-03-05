@@ -94,7 +94,7 @@ function Cursor() {
 }
 
 /* ─── Floating Testimonial ─── */
-function TestimonialCard({ quote, author, role, company, color, rotate, delay }: any) {
+function TestimonialCard({ quote, author, role, company, color, rotate, delay }: { quote: string; author: string; role: string; company: string; color: string; rotate: number; delay: number; image?: string }) {
     return (
         <m.div
             initial={{ opacity: 0, y: 30, rotate: rotate * 2 }}
@@ -115,6 +115,7 @@ export default function Hero() {
     const [wordIdx, setWordIdx] = useState(0);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- interval-driven animation cycling
         const t = setInterval(() => setWordIdx(i => (i + 1) % words.length), 2400);
         return () => clearInterval(t);
     }, []);

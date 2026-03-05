@@ -22,7 +22,7 @@ export default function CookieConsent() {
         // Only show if no preference stored
         const consent = getStoredConsent();
         if (!consent) {
-            // Small delay so it doesn't flash during hydration
+            // eslint-disable-next-line react-hooks/set-state-in-effect -- delayed show after hydration, legitimate timer pattern
             const timer = setTimeout(() => setVisible(true), 800);
             return () => clearTimeout(timer);
         }
@@ -132,10 +132,12 @@ export function useCookieConsent() {
     const [consent, setConsent] = useState<ConsentStatus>(null);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- reading from external store (localStorage)
         setConsent(getStoredConsent());
 
         const handler = (e: Event) => {
             const detail = (e as CustomEvent).detail;
+            // eslint-disable-next-line react-hooks/set-state-in-effect -- subscribing to external DOM event
             setConsent(detail as ConsentStatus);
         };
 

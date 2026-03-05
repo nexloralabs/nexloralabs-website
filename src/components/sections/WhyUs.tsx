@@ -1,9 +1,15 @@
 "use client";
 
-import { m, useScroll, useTransform, useInView } from "framer-motion";
+import { m, useScroll, useTransform, useInView, MotionValue } from "framer-motion";
 import { useRef } from "react";
 
-const features = [
+type FeatureType = {
+    id: number; number: string; title: string; description: string;
+    tag: string; accent: string; accentLight: string; metric: string; metricLabel: string;
+    icon: React.ReactNode;
+};
+
+const features: FeatureType[] = [
     {
         id: 1, number: "01", title: "Strategy-First Engineering",
         description: "Every product we build is custom-crafted to create real, measurable business impact. We don't just write code; we build growth engines that accelerate your time-to-revenue.",
@@ -42,7 +48,7 @@ const features = [
     },
 ];
 
-const StickyCard = ({ feature, i, progress, range, targetScale }: any) => {
+const StickyCard = ({ feature, i, progress, range, targetScale }: { feature: FeatureType; i: number; progress: MotionValue<number>; range: number[]; targetScale: number }) => {
     const container = useRef(null);
 
     const scale = useTransform(progress, range, [1, targetScale]);
