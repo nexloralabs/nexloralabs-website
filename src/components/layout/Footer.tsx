@@ -55,7 +55,7 @@ export default function Footer() {
                 />
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-4 lg:pt-8 pb-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 pt-4 lg:pt-8 pb-8">
 
                 {/* ══════════════════════════════════════════════════════
                     TOP HERO SECTION IN FOOTER

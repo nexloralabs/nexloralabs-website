@@ -43,7 +43,7 @@ export default function FAQ() {
     return (
         <section id="faq" className="py-2 md:py-4 relative overflow-hidden bg-white content-visibility-auto">
 
-            <div className="max-w-2xl mx-auto px-6 md:px-12 pt-0 pb-2 md:pt-0 md:pb-2">
+            <div className="max-w-2xl mx-auto px-6 md:px-16 pt-0 pb-2 md:pt-0 md:pb-2">
 
                 {/* Header */}
                 <div className="text-center mb-8">

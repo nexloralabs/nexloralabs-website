@@ -49,7 +49,7 @@ export default function Navbar() {
                 MOBILE NAVBAR
             ═══════════════════════════════════════ */}
             <header
-                className="fixed top-0 left-0 right-0 z-50 md:hidden px-4 pt-3 pointer-events-none"
+                className="fixed top-0 left-0 right-0 z-50 lg:hidden px-4 pt-3 pointer-events-none"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
                 <m.div
@@ -67,17 +67,15 @@ export default function Navbar() {
                         setMobileOpen(false);
                     }}>
                         {/* 
-                            Aggressively scaled the logo to remove white space from the image file.
-                            Using strong negative margin to literally push it out past the transparent padding
-                            so the actual visible pixels touch the exact left corner of the navbar.
+                            Adjusted scaling to prevent layout overflow on 320px screens while keeping it visible 
                         */}
-                        <div className="relative w-[190px] sm:w-[210px] h-[56px] flex items-center ml-[-16px] sm:ml-[-20px]">
+                        <div className="relative w-[130px] sm:w-[160px] h-[48px] flex items-center ml-[-8px]">
                             <Image
                                 src="/logo.webp"
                                 alt="Nexlance.tech Logo"
                                 fill
-                                sizes="320px"
-                                className="object-contain object-left scale-[2.2] sm:scale-[2.4] origin-left"
+                                sizes="(max-width: 640px) 130px, 160px"
+                                className="object-contain object-left scale-[1.8] sm:scale-[2] origin-left"
                                 priority
                             />
                         </div>
@@ -121,7 +119,7 @@ export default function Navbar() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed inset-0 z-40 md:hidden"
+                        className="fixed inset-0 z-40 lg:hidden"
                         style={{ fontFamily: "'DM Sans', sans-serif" }}
                     >
                         {/* Backdrop */}
@@ -181,7 +179,7 @@ export default function Navbar() {
                 DESKTOP NAVBAR — original pill layout
             ═══════════════════════════════════════ */}
             <header
-                className="fixed top-0 left-0 right-0 z-50 hidden md:flex items-start justify-between pt-5 px-6 md:px-10 pointer-events-none"
+                className="fixed top-0 left-0 right-0 z-50 hidden lg:flex items-start justify-between pt-5 px-6 pb-2 pointer-events-none"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
                 {/* LEFT — Logo */}
@@ -191,19 +189,19 @@ export default function Navbar() {
                     transition={{ duration: 0.6, ease }}
                     className="pointer-events-auto"
                 >
-                    <Link href="/" className="flex items-center group -mt-6" onClick={(e) => {
+                    <Link href="/" className="flex items-center group -mt-3 lg:-mt-4 xl:-mt-5" onClick={(e) => {
                         if (window.location.pathname === '/') {
                             e.preventDefault();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                         }
                     }}>
-                        <div className="relative w-[460px] h-[120px] flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+                        <div className="relative w-[210px] xl:w-[280px] h-[70px] xl:h-[90px] flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
                             <Image
                                 src="/logo.webp"
                                 alt="Nexlance.tech Logo"
                                 fill
-                                sizes="460px"
-                                className="object-contain object-left"
+                                sizes="(max-width: 1280px) 210px, 280px"
+                                className="object-contain object-left scale-[1.25] origin-left"
                                 priority
                             />
                         </div>
@@ -215,7 +213,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: -16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.08, ease }}
-                    className={`flex items-center gap-0.5 px-2 py-2 rounded-full border transition-all duration-500 pointer-events-auto absolute left-1/2 -translate-x-1/2 ${pill}`}
+                    className={`flex items-center gap-0.5 lg:px-1 xl:px-2 py-1 xl:py-2 rounded-full border transition-all duration-500 pointer-events-auto lg:static xl:absolute xl:left-1/2 xl:-translate-x-1/2 ${pill}`}
                 >
                     {navLinks.map(link => (
                         <Link
@@ -225,7 +223,7 @@ export default function Navbar() {
                             onMouseLeave={() => setActiveLink(null)}
                             target={link.href.startsWith("http") ? "_blank" : undefined}
                             rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className="relative px-4 py-2 rounded-full text-[13.5px] font-semibold text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                            className="relative lg:px-2.5 xl:px-4 py-2 rounded-full lg:text-[12.5px] xl:text-[13.5px] font-semibold text-gray-500 hover:text-gray-900 transition-colors duration-200"
                         >
                             {activeLink === link.name && (
                                 <m.div
@@ -247,7 +245,7 @@ export default function Navbar() {
                     className="flex items-center gap-2.5 pointer-events-auto"
                 >
                     {/* Availability badge */}
-                    <div className={`hidden lg:flex items-center gap-2 px-3 py-2.5 rounded-full border transition-all duration-500 ${pill}`}>
+                    <div className={`hidden xl:flex items-center gap-2 px-3 py-2.5 rounded-full border transition-all duration-500 ${pill}`}>
                         <span className="relative flex h-1.5 w-1.5">
                             <span className="animate-ping absolute inset-0 rounded-full bg-emerald-400 opacity-75" />
                             <span className="relative h-1.5 w-1.5 rounded-full bg-emerald-500" />

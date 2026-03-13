@@ -20,7 +20,7 @@ export default function FounderQuote() {
             <div className="absolute top-0 left-0 right-0 h-[2px]"
                 style={{ background: "linear-gradient(90deg, #2563EB 0%, #7C3AED 40%, transparent 100%)" }} />
 
-            <div className="max-w-6xl mx-auto px-8 md:px-16 py-6 md:py-8">
+            <div className="max-w-6xl mx-auto px-6 md:px-16 py-6 md:py-8">
 
                 {/* ══ Quote Card ══ */}
                 <div className="bg-white rounded-3xl border border-gray-100 shadow-[0_4px_40px_rgba(0,0,0,0.04)] overflow-hidden">

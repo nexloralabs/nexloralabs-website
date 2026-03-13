@@ -143,7 +143,7 @@ export default function WhyUs() {
             <div className="absolute top-0 left-0 w-full h-[15vh] bg-gradient-to-b from-white to-transparent pointer-events-none" />
 
             {/* Introductory Header Space */}
-            <div className="relative z-10 container mx-auto px-6 pt-2 sm:pt-4 lg:pt-6 pb-2">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16 pt-2 sm:pt-4 lg:pt-6 pb-2">
                 <div ref={headerRef} className="max-w-4xl mx-auto text-center flex flex-col items-center">
                     <m.div
                         initial={{ opacity: 0, y: 20 }}

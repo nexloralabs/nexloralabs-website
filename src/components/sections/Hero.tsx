@@ -142,14 +142,7 @@ export default function Hero() {
                 {/* ── MAIN CONTENT ── */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-[1fr_auto] gap-10 items-center">
 
-                    {/* ── Inside Floating testimonial (moved here to prevent clipping) ── */}
-                    <div className="hidden xl:block absolute right-[420px] 2xl:right-[540px] top-[15%] 2xl:top-[20%] z-20">
-                        <TestimonialCard
-                            quote="We needed more than a website — we needed credibility. Nexlance.tech built our entire digital presence with clarity and professionalism."
-                            author="Umesh Kumar" role="Founder" company=" Tej Edutech Consultancy"
-                            image="/clients/umesh.webp" color="#7C3AED" rotate={-5} delay={1.1}
-                        />
-                    </div>
+                    {/* Testimonial moved to right column for stable layout */}
 
                     {/* LEFT: All text */}
                     <div className="flex flex-col relative">
@@ -318,13 +311,22 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* RIGHT: Vertical metric cards */}
+                    {/* RIGHT: Vertical metric cards & Testimonial */}
                     <m.div
                         initial={{ opacity: 0, x: 40 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.9, delay: 0.8, ease }}
-                        className="hidden lg:flex flex-col gap-3 w-[190px] flex-shrink-0"
+                        className="hidden lg:flex flex-col gap-3 w-[190px] flex-shrink-0 relative"
                     >
+                        {/* ── Floating testimonial now robustly positioned relative to right column ── */}
+                        <div className="hidden xl:block absolute -left-[260px] top-[15%] z-20">
+                            <TestimonialCard
+                                quote="We needed more than a website — we needed credibility. Nexlance.tech built our entire digital presence with clarity and professionalism."
+                                author="Umesh Kumar" role="Founder" company=" Tej Edutech Consultancy"
+                                image="/clients/umesh.webp" color="#7C3AED" rotate={-5} delay={1.1}
+                            />
+                        </div>
+
                         {metrics.map((metric, i) => (
                             <m.div
                                 key={metric.label}
