@@ -3,6 +3,7 @@ import { Playfair_Display, DM_Sans } from "next/font/google";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import Script from "next/script";
 import CookieConsent from "@/components/ui/CookieConsent";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -388,23 +389,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Google tag (gtag.js) */}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-C3M2EVLDNH`}
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-C3M2EVLDNH');
-            `,
-          }}
-        />
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -423,6 +407,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${dmSans.variable} font-dm bg-bg-primary text-text-primary antialiased selection:bg-accent/30 selection:text-gray-900`}
       >
+        <GoogleAnalytics gaId="G-C3M2EVLDNH" />
         <MotionProvider>
           {children}
           <CookieConsent />
