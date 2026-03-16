@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { m, AnimatePresence } from "framer-motion";
 
-const STORAGE_KEY = "nexlance-cookie-consent";
+const STORAGE_KEY = "nexlora-cookie-consent";
 
 type ConsentStatus = "accepted" | "rejected" | null;
 

@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ["/api/", "/_next/"],
             },
         ],
-        sitemap: "https://nexlance.tech/sitemap.xml",
-        host: "https://nexlance.tech",
+        sitemap: "https://nexloralabs.com/sitemap.xml",
+        host: "https://nexloralabs.com",
     };
 }

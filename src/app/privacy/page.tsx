@@ -4,13 +4,13 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Privacy Policy — Nexlance.tech",
-    description: "How Nexlance.tech collects, uses, and protects your information.",
+    title: "Privacy Policy | NexLora Labs",
+    description: "Your privacy is our priority. Learn how NexLora Labs handles your data and protects your information.",
     alternates: { canonical: "/privacy" },
     openGraph: {
-        title: "Privacy Policy — Nexlance.tech",
-        description: "How Nexlance.tech collects, uses, and protects your information.",
-        url: "https://nexlance.tech/privacy",
+        title: "Privacy Policy | NexLora Labs",
+        description: "Your privacy is our priority. Learn how NexLora Labs handles your data and protects your information.",
+        url: "https://nexloralabs.com/privacy",
     },
 };
 
@@ -20,7 +20,7 @@ const sections = [
         items: [
             {
                 heading: "Purpose of the Policy",
-                content: "This Privacy Policy outlines how Nexlance.tech collects, uses, discloses, and protects your information when you visit our website or interact with our services. It is designed to help you understand the types of data we collect, why we collect it, and how we use and manage that information. By making our data practices transparent, we aim to foster trust and ensure compliance with applicable data protection laws.",
+                content: "This Privacy Policy outlines how NexLora Labs collects, uses, discloses, and protects your information when you visit our website or interact with our services. It is designed to help you understand the types of data we collect, why we collect it, and how we use and manage that information. By making our data practices transparent, we aim to foster trust and ensure compliance with applicable data protection laws.",
             },
             {
                 heading: "Scope of Coverage",
@@ -79,7 +79,7 @@ const sections = [
             },
             {
                 heading: "In Business Transfers",
-                content: "In the event that Nexlance.tech is involved in a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of the business transaction. We will ensure that any new entity handling your data is bound by privacy obligations consistent with this policy.",
+                content: "In the event that NexLora Labs is involved in a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of the business transaction. We will ensure that any new entity handling your data is bound by privacy obligations consistent with this policy.",
             },
         ],
     },
@@ -97,7 +97,7 @@ const sections = [
         items: [
             {
                 heading: "External Websites",
-                content: "Our website may contain links to other websites not operated by Nexlance.tech. We are not responsible for the privacy practices or the content of these external sites. We encourage users to review the privacy policies of any third-party sites they visit.",
+                content: "Our website may contain links to other websites not operated by NexLora Labs. We are not responsible for the privacy practices or the content of these external sites. We encourage users to review the privacy policies of any third-party sites they visit.",
             },
             {
                 heading: "Embedded Content",

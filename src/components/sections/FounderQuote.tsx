@@ -47,7 +47,7 @@ export default function FounderQuote() {
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: 0.1 }}
-                                className="block text-[64px] md:text-[80px] leading-none text-blue-600 select-none -mb-4 md:-mb-6 font-cormorant font-bold"
+                                className="block text-[64px] md:text-[80px] leading-none text-blue-600 select-none -mb-4 md:-mb-6 font-playfair font-bold"
                             >
                                 &ldquo;
                             </m.span>
@@ -59,7 +59,7 @@ export default function FounderQuote() {
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.8, delay: 0.15, ease }}
-                                    className="text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.2] tracking-[-0.02em] text-gray-900 font-cormorant font-bold italic"
+                                    className="text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.2] tracking-[-0.02em] text-gray-900 font-playfair font-bold italic"
                                 >
                                     Technology is our tool.
                                 </m.h2>
@@ -70,7 +70,7 @@ export default function FounderQuote() {
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.8, delay: 0.25, ease }}
-                                    className="text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.2] tracking-[-0.02em] text-gray-900 font-cormorant font-bold italic"
+                                    className="text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.2] tracking-[-0.02em] text-gray-900 font-playfair font-bold italic"
                                 >
                                     <span className="text-blue-600">Impact</span> is our outcome.&rdquo;
                                 </m.h2>
@@ -86,7 +86,7 @@ export default function FounderQuote() {
                             >
                                 <div className="w-10 h-px bg-blue-200" />
                                 <p className="text-[11px] font-semibold text-gray-400 tracking-[0.12em] uppercase">
-                                    The Nexlance.tech Engineering Team
+                                    The NexLora Labs Engineering Team
                                 </p>
                             </m.div>
                         </div>
@@ -187,14 +187,12 @@ export default function FounderQuote() {
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-[1.05rem] leading-[1.3] text-gray-800 group-hover:text-gray-900 transition-colors duration-300 mb-1.5 font-cormorant font-bold">
+                                    <h3 className="text-[1.05rem] leading-[1.3] text-gray-800 group-hover:text-gray-900 transition-colors duration-300 mb-1.5 font-playfair font-bold">
                                         {v.title}
                                     </h3>
 
                                     {/* Accent line */}
-                                    <div className="w-5 h-[1.5px] bg-gray-200 group-hover:w-8 transition-all duration-300 mb-2"
-                                        style={{ backgroundColor: undefined }}
-                                    />
+                                    <div className="w-5 h-[1.5px] bg-gray-200 group-hover:w-8 transition-all duration-300 mb-2" />
 
                                     {/* Description */}
                                     <p className="text-[12px] text-gray-400 leading-relaxed font-medium group-hover:text-gray-500 transition-colors duration-300">

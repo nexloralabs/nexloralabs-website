@@ -86,8 +86,8 @@ export default function Contact() {
                             <a href="tel:+919505231281" className="block text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors mb-3">
                                 +91 9505231281
                             </a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nexlance.tech@gmail.com" target="_blank" rel="noopener noreferrer" className="block text-2xl sm:text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors mb-3">
-                                nexlance.tech@gmail.com
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nexloralabs@gmail.com" target="_blank" rel="noopener noreferrer" className="block text-2xl sm:text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors mb-3">
+                                nexloralabs@gmail.com
                             </a>
                             <p className="text-[14px] text-gray-500 font-medium max-w-xs leading-relaxed">
                                 Reach out to us via email or give us a call, we are happy to assist you!
@@ -102,11 +102,11 @@ export default function Contact() {
                         transition={{ delay: 0.4 }}
                         className="flex flex-col gap-3"
                     >
-                        <a href="https://www.instagram.com/nexlance.tech/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors group w-fit">
+                        <a href="https://www.instagram.com/nexloralabs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors group w-fit">
                             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                             Instagram
                         </a>
-                        <a href="https://www.linkedin.com/company/nexlance-tech/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors group w-fit">
+                        <a href="https://www.linkedin.com/company/nexloralabs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors group w-fit">
                             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                             LinkedIn
                         </a>
@@ -145,8 +145,8 @@ export default function Contact() {
                         /* ── Form ── */
                         <form className="flex flex-col gap-6" onSubmit={onSubmit}>
                             {/* Hidden fields for Web3Forms */}
-                            <input type="hidden" name="subject" value="New Project Inquiry — Nexlance.tech" />
-                            <input type="hidden" name="from_name" value="Nexlance.tech Website" />
+                            <input type="hidden" name="subject" value="New Project Inquiry — NexLora Labs" />
+                            <input type="hidden" name="from_name" value="NexLora Labs Website" />
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
                                 <input

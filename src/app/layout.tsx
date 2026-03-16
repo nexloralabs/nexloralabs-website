@@ -20,13 +20,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nexlance.tech"),
+  metadataBase: new URL("https://nexloralabs.com"),  // Domain unchanged — update when new domain is configured
   title: {
-    default: "Nexlance — Freelance Software Engineering Team | Custom Dev, AI & Automation",
-    template: "%s | Nexlance.tech",
+    default: "NexLora Labs — Freelance Software Engineering Team | Custom Dev, AI & Automation",
+    template: "%s | NexLora Labs",
   },
   description:
-    "Nexlance is a freelance engineering team that designs, builds, deploys & automates digital products for businesses of all sizes. Web, mobile, SaaS, AI & n8n automation — from idea to deployment.",
+    "NexLora Labs is a freelance engineering team that designs, builds, deploys & automates digital products for businesses of all sizes. Web, mobile, SaaS, AI & n8n automation — from idea to deployment.",
   keywords: [
     "custom software development team",
     "hire software engineers",
@@ -55,30 +55,35 @@ export const metadata: Metadata = {
     "automate business processes with AI",
     "intelligent automation for small business",
   ],
-  authors: [{ name: "Nexlance.tech", url: "https://nexlance.tech" }],
-  creator: "Nexlance.tech",
-  publisher: "Nexlance.tech",
+  authors: [{ name: "NexLora Labs", url: "https://nexloralabs.com" }],
+  creator: "NexLora Labs",
+  publisher: "NexLora Labs",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    title: "Nexlance — Freelance Engineering Team | Custom Software, AI & Automation",
+    title: "NexLora Labs — Freelance Engineering Team | Custom Software, AI & Automation",
     description:
       "One engineering team. Every service. End to end. We design, build, deploy & automate digital products for startups, SMBs and enterprises.",
-    url: "https://nexlance.tech",
-    siteName: "Nexlance.tech",
+    url: "https://nexloralabs.com",
+    siteName: "NexLora Labs",
     locale: "en_US",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nexlance freelance engineering team — custom software development, AI automation and n8n workflows",
+        alt: "NexLora Labs freelance engineering team — custom software development, AI automation and n8n workflows",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nexlance — Freelance Engineering Team | Custom Software, AI & Automation",
+    title: "NexLora Labs — Freelance Engineering Team | Custom Software, AI & Automation",
     description:
       "One team. Every service. End to end. We build web apps, mobile apps, SaaS & AI automation for businesses of all sizes.",
     images: ["/og-image.jpg"],
@@ -104,17 +109,17 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Nexlance.tech",
-  url: "https://nexlance.tech",
-  logo: "https://nexlance.tech/og-image.jpg",
+  name: "NexLora Labs",
+  url: "https://nexloralabs.com",
+  logo: "https://nexloralabs.com/og-image.jpg",
   description:
-    "Nexlance is a freelance engineering team that designs, builds, deploys, and automates digital products for businesses of all sizes — from startups to enterprises.",
-  email: "nexlance.tech@gmail.com",
+    "NexLora Labs is a freelance engineering team that designs, builds, deploys, and automates digital products for businesses of all sizes — from startups to enterprises.",
+  email: "nexloralabs@gmail.com",
   telephone: "+919505231281",
   sameAs: [
-    "https://twitter.com/nexlance_tech",
-    "https://www.instagram.com/nexlance.tech/",
-    "https://www.linkedin.com/company/nexlance-tech/",
+    "https://twitter.com/nexloralabs",
+    "https://www.instagram.com/nexloralabs",
+    "https://www.linkedin.com/company/nexloralabs",
   ],
   address: {
     "@type": "PostalAddress",
@@ -146,17 +151,17 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Nexlance.tech",
-  url: "https://nexlance.tech",
+  name: "NexLora Labs",
+  url: "https://nexloralabs.com",
   description:
     "Freelance engineering team building web apps, mobile apps, SaaS platforms, AI solutions & n8n automations for businesses of all sizes.",
   publisher: {
     "@type": "Organization",
-    name: "Nexlance.tech",
+    name: "NexLora Labs",
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://nexlance.tech/?q={search_term_string}",
+    target: "https://nexloralabs.com/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -164,14 +169,14 @@ const websiteSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Nexlance — Freelance Software Engineering Team",
-  url: "https://nexlance.tech",
+  name: "NexLora Labs — Freelance Software Engineering Team",
+  url: "https://nexloralabs.com",
   description:
     "End-to-end custom software development, AI automation, and n8n workflow engineering for startups, small businesses, and enterprises. One engineering team — every service — from idea to deployment.",
   telephone: "+919505231281",
-  email: "nexlance.tech@gmail.com",
+  email: "nexloralabs@gmail.com",
   priceRange: "$$",
-  image: "https://nexlance.tech/og-image.jpg",
+  image: "https://nexloralabs.com/og-image.jpg",
   address: {
     "@type": "PostalAddress",
     addressCountry: "IN",
@@ -268,15 +273,15 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Who is behind Nexlance.tech?",
+      name: "Who is behind NexLora Labs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nexlance is a dedicated freelance engineering team of senior software engineers, designers, and automation specialists. Every project is built by our core team — no outsourcing, no junior developers, no middlemen.",
+        text: "NexLora Labs is a dedicated freelance engineering team of senior software engineers, designers, and automation specialists. Every project is built by our core team — no outsourcing, no junior developers, no middlemen.",
       },
     },
     {
       "@type": "Question",
-      name: "What custom software development services does Nexlance offer?",
+      name: "What custom software development services does NexLora Labs offer?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "We offer end-to-end services: custom web application development, mobile app development (Android & iOS), SaaS product development, AI development & integration, AI automation & n8n workflow engineering, DevOps & cloud deployment, UI/UX design, ecommerce development, MVP prototyping, and technical consulting. We handle everything from idea to deployment.",
@@ -308,7 +313,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can Nexlance work with businesses of any size?",
+      name: "Can NexLora Labs work with businesses of any size?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Absolutely. We partner with businesses of all sizes — solo founders with an idea, growing startups needing a tech team, SMBs looking to digitize operations, and established enterprises requiring custom software. One team, every service, end to end.",
@@ -333,25 +338,25 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://nexlance.tech",
+      item: "https://nexloralabs.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://nexlance.tech/#services",
+      item: "https://nexloralabs.com/#services",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Our Work",
-      item: "https://nexlance.tech/#work",
+      item: "https://nexloralabs.com/#work",
     },
     {
       "@type": "ListItem",
       position: 4,
       name: "Contact",
-      item: "https://nexlance.tech/contact",
+      item: "https://nexloralabs.com/contact",
     },
   ],
 };
@@ -361,10 +366,10 @@ const personSchema = {
   "@type": "Person",
   name: "Siva Goram",
   jobTitle: "Lead Engineer & Founder",
-  url: "https://nexlance.tech",
+  url: "https://nexloralabs.com",
   worksFor: {
     "@type": "Organization",
-    name: "Nexlance.tech",
+    name: "NexLora Labs",
   },
   knowsAbout: [
     "Full-Stack Development",

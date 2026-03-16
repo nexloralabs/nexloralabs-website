@@ -1,6 +1,7 @@
 {
-  "name": "agency-website",
-  "version": "0.1.0",
+  "name": "nexloralabs",
+  "version": "1.0.0",
+  "description": "NexLora Labs — Freelance Software Engineering Team",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -51,14 +51,15 @@ export default function FloatingBar() {
                         </button>
 
                         <div className="flex items-center gap-3">
-                            <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-100 bg-black overflow-hidden shadow-sm">
+                            <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-100 bg-white overflow-hidden shadow-sm">
                                 <div className="relative w-5 h-5">
                                     <Image
-                                        src="/icon.webp"
-                                        alt="Nexlance"
+                                        src="/icon.png"
+                                        alt="NexLora Labs"
                                         fill
                                         sizes="20px"
                                         className="object-contain"
+                                        unoptimized
                                     />
                                 </div>
                             </span>
@@ -68,7 +69,7 @@ export default function FloatingBar() {
                             </div>
                         </div>
                         <a
-                            href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                            href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gray-900 text-white font-semibold text-sm hover:bg-black transition-colors whitespace-nowrap text-center shadow-md cursor-pointer"

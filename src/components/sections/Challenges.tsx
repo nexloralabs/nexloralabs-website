@@ -97,7 +97,7 @@ export default function Challenges() {
                             className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-5 font-playfair"
                         >
                             Product Development Challenges —{" "}
-                            <span className="bg-gradient-to-r from-blue-600 to-violet-500 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                                 Solved.
                             </span>
                         </m.h2>
@@ -252,7 +252,7 @@ export default function Challenges() {
 
                                 {/* CTA */}
                                 <a
-                                    href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                                    href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r ${item.gradient} text-white text-[13px] font-bold self-start hover:scale-[1.03] hover:-translate-y-0.5 transition-all duration-300`}
@@ -279,7 +279,7 @@ export default function Challenges() {
                     <p className="text-gray-500 text-[13px] font-medium">
                         Facing one of these challenges right now? Let&apos;s talk strategy.
                     </p>
-                    <a href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true" target="_blank" rel="noopener noreferrer"
+                    <a href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true" target="_blank" rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white font-bold text-[13px] hover:bg-black transition-all duration-300 hover:scale-[1.02]">
                         <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px]">📅</span>
                         Book a Strategy Session

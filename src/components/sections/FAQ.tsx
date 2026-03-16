@@ -8,8 +8,8 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const faqs = [
     {
-        question: "Who is behind Nexlance.tech?",
-        answer: "Nexlance is a dedicated freelance engineering team of senior software engineers, designers, and automation specialists. Every project is built by our core team — no outsourcing, no junior developers, no middlemen.",
+        question: "Who is behind NexLora Labs?",
+        answer: "NexLora Labs is a dedicated freelance engineering team of senior software engineers, designers, and automation specialists. Every project is built by our core team — no outsourcing, no junior developers, no middlemen.",
     },
     {
         question: "Do you accept custom requirements?",
@@ -121,7 +121,7 @@ export default function FAQ() {
                                     </button>
                                 </div>
 
-                                {/* Nexlance.tech answer — left-aligned chat bubble */}
+                                {/* NexLora Labs answer — left-aligned chat bubble */}
                                 <AnimatePresence>
                                     {isOpen && (
                                         <m.div
@@ -132,15 +132,16 @@ export default function FAQ() {
                                             className="overflow-hidden"
                                         >
                                             <div className="flex items-start gap-3 max-w-[90%]">
-                                                {/* Nexlance.tech avatar */}
-                                                <div className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center mt-0.5 shadow-sm border border-gray-100 overflow-hidden relative bg-black">
+                                                {/* NexLora Labs avatar */}
+                                                <div className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center mt-0.5 shadow-sm border border-gray-100 overflow-hidden relative bg-white">
                                                     <div className="relative w-4 h-4">
                                                         <Image
-                                                            src="/icon.webp"
-                                                            alt="Nexlance"
+                                                            src="/icon.png"
+                                                            alt="NexLora Labs"
                                                             fill
                                                             sizes="16px"
                                                             className="object-contain"
+                                                            unoptimized
                                                         />
                                                     </div>
                                                 </div>

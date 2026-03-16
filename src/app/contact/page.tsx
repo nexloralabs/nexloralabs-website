@@ -7,15 +7,15 @@ import dynamic from "next/dynamic";
 const FloatingBar = dynamic(() => import("@/components/ui/FloatingBar"));
 
 export const metadata: Metadata = {
-    title: "Contact Nexlance — Talk to Our Engineers About Your Project",
+    title: "Contact NexLora Labs — Talk to Our Engineers About Your Project",
     description:
-        "Ready to build your next digital product? Contact the Nexlance engineering team for a free discovery call. Custom software, AI automation & n8n workflows for businesses of all sizes.",
+        "Ready to build your next digital product? Contact the NexLora Labs engineering team for a free discovery call. Custom software, AI automation & n8n workflows for businesses of all sizes.",
     alternates: { canonical: "/contact" },
     openGraph: {
-        title: "Contact Nexlance — Free Consultation for Custom Software & AI Automation",
+        title: "Contact NexLora Labs — Free Consultation for Custom Software & AI Automation",
         description:
             "Get in touch with our freelance engineering team to discuss your project. Custom web development, mobile apps, SaaS, AI automation & n8n workflows for startups, SMBs and enterprises.",
-        url: "https://nexlance.tech/contact",
+        url: "https://nexloralabs.com/contact",
     },
 };
 

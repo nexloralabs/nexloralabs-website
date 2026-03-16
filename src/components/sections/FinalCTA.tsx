@@ -78,7 +78,7 @@ export default function FinalCTA() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.15, ease }}
-                            href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                            href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-full bg-white text-gray-900 font-bold text-[14px] hover:scale-[1.03] hover:-translate-y-0.5 active:scale-95 active:translate-y-0 transition-all duration-300 shadow-[0_8px_32px_rgba(255,255,255,0.1)]"
@@ -116,7 +116,7 @@ export default function FinalCTA() {
                                         className="text-white font-black text-[18px] tracking-tight inline-block overflow-hidden whitespace-nowrap border-r-2 border-white/40 font-playfair"
                                         initial={{ width: 0 }}
                                         animate={{
-                                            width: ["0ch", "11ch", "11ch", "0ch", "0ch"],
+                                            width: ["0ch", "15ch", "15ch", "0ch", "0ch"],
                                             borderColor: [
                                                 "rgba(255,255,255,0.4)",
                                                 "rgba(255,255,255,0)",
@@ -132,7 +132,7 @@ export default function FinalCTA() {
                                             times: [0, 0.3, 0.8, 0.9, 1]
                                         }}
                                     >
-                                        Nexlance.tech...
+                                        NexLora Labs...
                                     </m.span>
                                 </div>
                             </div>

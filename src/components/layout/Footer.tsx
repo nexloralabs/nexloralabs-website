@@ -24,8 +24,8 @@ export default function Footer() {
             const fd = new FormData();
             fd.append("access_key", "12b3272b-2a01-4d5b-89c9-b432f15ebfbb");
             fd.append("email", email);
-            fd.append("subject", "New Newsletter Subscription | Nexlance.tech");
-            fd.append("from_name", "Nexlance.tech Website");
+            fd.append("subject", "New Newsletter Subscription | NexLora Labs");
+            fd.append("from_name", "NexLora Labs Website");
             const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: fd });
             const data = await res.json();
             if (data.success) setSubmitted(true);
@@ -103,11 +103,12 @@ export default function Footer() {
                         }}>
                             <div className="relative w-[240px] md:w-[460px] h-[60px] md:h-[120px] mb-2 md:-ml-4">
                                 <Image
-                                    src="/logo.webp"
-                                    alt="Nexlance.tech"
+                                    src="/logo.png"
+                                    alt="NexLora Labs"
                                     fill
                                     sizes="(max-width: 768px) 240px, 460px"
                                     className="object-contain object-left"
+                                    unoptimized
                                 />
                             </div>
                         </Link>
@@ -115,8 +116,8 @@ export default function Footer() {
                             Freelance engineering team building web apps, mobile apps, SaaS, AI solutions & n8n automations for businesses of all sizes.
                         </p>
                         <div className="flex flex-col gap-2.5">
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nexlance.tech@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 text-[14.5px] font-medium transition-colors">
-                                <span className="text-gray-400 text-[13px]">✉</span> nexlance.tech@gmail.com
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nexloralabs@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 text-[14.5px] font-medium transition-colors">
+                                <span className="text-gray-400 text-[13px]">✉</span> nexloralabs@gmail.com
                             </a>
                             <a href="tel:+919505231281" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 text-[14.5px] font-medium transition-colors">
                                 <span className="text-gray-400 text-[14px]">☎</span> +91 95052 31281
@@ -135,7 +136,7 @@ export default function Footer() {
                             {[
                                 { label: "Services", href: "/#services" },
                                 { label: "Our Work", href: "/#work" },
-                                { label: "Why Us", href: "/#whyus" },
+                                { label: "Why Us", href: "/#why-us" },
                                 { label: "FAQs", href: "/#faq" },
                                 { label: "Contact", href: "/contact" },
                             ].map(l => (
@@ -158,9 +159,9 @@ export default function Footer() {
                         <h4 className="font-semibold text-gray-900 text-[14px] uppercase tracking-wider mb-5">Socials</h4>
                         <ul className="space-y-3.5">
                             {[
-                                { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=nexlance.tech@gmail.com" },
-                                { label: "Instagram", href: "https://www.instagram.com/nexlance.tech/" },
-                                { label: "LinkedIn", href: "https://www.linkedin.com/company/nexlance-tech/" },
+                                { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=nexloralabs@gmail.com" },
+                                { label: "Instagram", href: "https://www.instagram.com/nexloralabs" },
+                                { label: "LinkedIn", href: "https://www.linkedin.com/company/nexloralabs" },
                             ].map(l => (
                                 <li key={l.label}>
                                     <a href={l.href} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-gray-500 hover:text-blue-600 text-[15px] font-medium transition-colors duration-200">
@@ -230,7 +231,7 @@ export default function Footer() {
                 ══════════════════════════════════════════════════════ */}
                 <div className="mt-10 pt-5 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-gray-400 text-[13px] font-medium">
-                        © {year} Nexlance.tech. All rights reserved.
+                        © {year} NexLora Labs. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">
                         <Link href="/privacy" className="text-gray-400 hover:text-gray-900 text-[13px] font-medium transition-colors">

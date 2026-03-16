@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { domAnimation, LazyMotion, m, AnimatePresence, useMotionValue, useSpring } from "framer-motion";
+import { m, AnimatePresence, useMotionValue, useSpring } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -120,7 +120,6 @@ export default function Hero() {
     }, []);
 
     return (
-        <LazyMotion features={domAnimation}>
             <section className="relative flex items-center justify-center overflow-hidden bg-[#FAFAF8] pt-24 pb-10 md:pt-24 md:pb-10 lg:pt-24 lg:pb-10 font-dm">
 
                 {/* ── Structural background ── */}
@@ -131,7 +130,7 @@ export default function Hero() {
 
                 {/* Top border accent */}
                 <div className="absolute top-0 left-0 right-0 h-[3px] pointer-events-none">
-                    <div className="h-full bg-gradient-to-r from-blue-600 via-violet-500 to-pink-500" />
+                    <div className="h-full bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400" />
                 </div>
 
                 {/* Magnetic cursor — desktop */}
@@ -149,7 +148,7 @@ export default function Hero() {
 
                         {/* Pill badge */}
                         <a
-                            href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                            href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hero-fade-in inline-flex items-center gap-2.5 self-start mb-6 px-4 py-2 rounded-full border border-blue-100 bg-blue-50 cursor-pointer hover:bg-blue-100 hover:border-blue-200 transition-colors duration-200"
@@ -220,7 +219,7 @@ export default function Hero() {
                             initial={{ scaleX: 0 }}
                             animate={{ scaleX: 1 }}
                             transition={{ duration: 0.9, delay: 0.5, ease }}
-                            className="w-24 h-[2px] bg-gradient-to-r from-blue-600 to-violet-500 mb-2 origin-left"
+                            className="w-24 h-[2px] bg-gradient-to-r from-blue-600 to-cyan-400 mb-2 origin-left"
                         />
 
                         {/* Sub copy */}
@@ -241,7 +240,7 @@ export default function Hero() {
                         >
                             {/* Primary — Expandable "N + You" CTA */}
                             <a
-                                href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                                href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative inline-flex items-center gap-3 px-6 py-3.5 rounded-full text-white font-bold text-[14px] transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5 active:scale-95 overflow-hidden"
@@ -273,7 +272,7 @@ export default function Hero() {
                                 className="hidden xl:block max-w-[220px] ml-8 -rotate-[2deg] hover:rotate-0 transition-transform duration-300"
                             >
                                 <div className="bg-white rounded-2xl p-3.5 shadow-[0_6px_36px_rgba(0,0,0,0.08)] border border-black/[0.05]">
-                                    <p className="text-[10px] text-gray-500 leading-relaxed mb-2.5">Nexlance.tech brought RapidReel Creations to life with a cinematic, high-performance website that truly reflects our brand identity.</p>
+                                    <p className="text-[10px] text-gray-500 leading-relaxed mb-2.5">NexLora Labs brought RapidReel Creations to life with a cinematic, high-performance website that truly reflects our brand identity.</p>
                                     <p className="text-[10px] text-gray-600 font-semibold">— Sanjay Kumar, Founder & CEO, RapidReelCreations.com</p>
                                 </div>
                             </m.div>
@@ -288,15 +287,14 @@ export default function Hero() {
                                 {[
                                     "/clients/sanjay.webp",
                                     "/clients/umesh.webp",
-                                    "/clients/client3.jpg",
+                                    "/clients/client3.webp",
                                 ].map((src, i) => (
                                     <Image
                                         key={i}
                                         src={src}
-                                        alt={`Nexlance.tech satisfied client ${i + 1}`}
+                                        alt={`NexLora Labs satisfied client ${i + 1}`}
                                         width={36}
                                         height={36}
-                                        loading="lazy"
                                         className="w-9 h-9 rounded-full object-cover border-[2.5px] border-[#FAFAF8] shadow-sm transform transition-transform hover:scale-110"
                                     />
                                 ))}
@@ -321,7 +319,7 @@ export default function Hero() {
                         {/* ── Floating testimonial now robustly positioned relative to right column ── */}
                         <div className="hidden xl:block absolute -left-[260px] top-[15%] z-20">
                             <TestimonialCard
-                                quote="We needed more than a website — we needed credibility. Nexlance.tech built our entire digital presence with clarity and professionalism."
+                                quote="We needed more than a website — we needed credibility. NexLora Labs built our entire digital presence with clarity and professionalism."
                                 author="Umesh Kumar" role="Founder" company=" Tej Edutech Consultancy"
                                 image="/clients/umesh.webp" color="#7C3AED" rotate={-5} delay={1.1}
                             />
@@ -350,7 +348,7 @@ export default function Hero() {
                         {/* Decorative "as seen" label */}
                         <div className="mt-2 flex items-center gap-2">
                             <div className="flex-1 h-px bg-gray-200" />
-                            <span className="text-[9px] text-gray-300 font-semibold tracking-widest uppercase whitespace-nowrap">Nexlance.tech</span>
+                            <span className="text-[9px] text-gray-300 font-semibold tracking-widest uppercase whitespace-nowrap">NexLora Labs</span>
                             <div className="flex-1 h-px bg-gray-200" />
                         </div>
                     </m.div>
@@ -376,6 +374,5 @@ export default function Hero() {
                     </m.div>
                 </div>
             </section>
-        </LazyMotion>
     );
 }

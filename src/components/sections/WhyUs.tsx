@@ -152,7 +152,7 @@ export default function WhyUs() {
                         className="inline-flex items-center gap-2 px-4 sm:px-5 py-1.5 sm:py-2 rounded-full border border-gray-200 bg-white shadow-sm text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 sm:mb-6"
                     >
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-[pulse_2s_ease-in-out_infinite]" />
-                        The Nexlance.tech Standard
+                        The NexLora Labs Standard
                     </m.div>
 
                     <m.h2
@@ -206,7 +206,7 @@ export default function WhyUs() {
                     transition={{ duration: 0.5 }}
                 >
                     <a
-                        href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                        href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative overflow-hidden inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-black text-white font-bold text-[14px] hover:bg-gray-900 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95 active:translate-y-0"

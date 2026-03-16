@@ -16,7 +16,7 @@ const projects = [
         client: "Umesh Chandra",
         role: "Founder & CEO",
         company: "Tej EduTech",
-        quote: "Nexlance.tech transformed our vision into a live platform in a week — the quality exceeded our expectations.",
+        quote: "NexLora Labs transformed our vision into a live platform in a week — the quality exceeded our expectations.",
         tags: ["Next.js", "Tailwind CSS", "Education", "7-Day Delivery"],
         color: "#2563EB",
         light: "#EFF6FF",
@@ -31,7 +31,7 @@ const projects = [
         client: "Sanjay",
         role: "Founder & CEO",
         company: "Rapid Reel Creations",
-        quote: "Nexlance.tech didn't just meet the deadline, they set a new standard for quality.",
+        quote: "NexLora Labs didn't just meet the deadline, they set a new standard for quality.",
         tags: ["Next.js", "Framer Motion", "Web Design", "4-Day Launch"],
         color: "#E11D48",
         light: "#FFE4E6",
@@ -164,7 +164,7 @@ export default function Projects() {
                                 <div className="relative w-full aspect-[16/10]">
                                     <Image
                                         src={project.image}
-                                        alt={`${project.title} — ${project.category} developed by Nexlance.tech engineering team`}
+                                        alt={`${project.title} — ${project.category} developed by NexLora Labs engineering team`}
                                         fill
                                         sizes="(max-width: 1024px) 100vw, 50vw"
                                         className="object-cover object-top"

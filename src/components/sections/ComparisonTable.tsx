@@ -9,44 +9,44 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const categories = [
     {
         label: "Cost",
-        nexlance: "Fair & transparent",
+        nexlora: "Fair & transparent",
         hiring: "$$$ (salary + benefits + tools)",
         agencies: "$$$ – $$$$ per project",
     },
     {
         label: "Expertise",
-        nexlance: "Senior-only, full-stack team",
+        nexlora: "Senior-only, full-stack team",
         hiring: "Varies per hire",
         agencies: "Varies by team",
     },
     {
         label: "Turnaround",
-        nexlance: "Fast, predictable",
+        nexlora: "Fast, predictable",
         hiring: "Weeks of onboarding",
         agencies: "Often slower",
     },
     {
         label: "Flexibility",
-        nexlance: "Scale up or down anytime",
+        nexlora: "Scale up or down anytime",
         hiring: "Contracts & overhead",
         agencies: "Rigid, project-locked",
     },
     {
         label: "Design Quality",
-        nexlance: "Modern & original",
+        nexlora: "Modern & original",
         hiring: "Depends on talent",
         agencies: "Template-driven",
     },
     {
         label: "Post-Launch Support",
-        nexlance: "6 months free support",
+        nexlora: "6 months free support",
         hiring: "You manage it",
         agencies: "Extra charges",
     },
 ];
 
 const columns = [
-    { key: "nexlance", label: "Nexlance.tech", highlight: true },
+    { key: "nexlora", label: "NexLora Labs", highlight: true },
     { key: "hiring", label: "Hiring In-House", highlight: false },
     { key: "agencies", label: "Other Freelancers", highlight: false },
 ] as const;
@@ -68,7 +68,7 @@ export default function ComparisonTable() {
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6"
                     >
                         <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-                        <span className="text-[11px] font-bold text-blue-600 tracking-wider uppercase">The Nexlance.tech Difference</span>
+                        <span className="text-[11px] font-bold text-blue-600 tracking-wider uppercase">The NexLora Labs Difference</span>
                     </m.div>
 
                     <m.h2
@@ -80,7 +80,7 @@ export default function ComparisonTable() {
                     >
                         Why Choose Our{" "}
                         <span style={{
-                            background: "linear-gradient(135deg,#2563EB,#7C3AED)",
+                            background: "linear-gradient(135deg,#2563EB,#06B6D4)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                         }}>
@@ -94,7 +94,7 @@ export default function ComparisonTable() {
                         transition={{ delay: 0.15 }}
                         className="text-gray-400 text-[15px] max-w-lg mx-auto font-medium"
                     >
-                        Nexlance vs. in-house hiring vs. traditional freelancers — see why businesses of all sizes choose our engineering team.
+                        NexLora Labs vs. in-house hiring vs. traditional freelancers — see why businesses of all sizes choose our engineering team.
                     </m.p>
                 </div>
 
@@ -161,14 +161,14 @@ export default function ComparisonTable() {
                                             <span className="text-[13px] font-bold text-gray-800">{cat.label}</span>
                                         </div>
 
-                                        {/* Nexlance.tech — always green check */}
+                                        {/* NexLora Labs — always green check */}
                                         <div className="p-5 md:p-6 flex items-center gap-2.5 relative">
                                             {/* Subtle highlight column */}
                                             <div className="absolute inset-0 bg-blue-500/[0.02] pointer-events-none" />
                                             <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 relative z-10 shadow-sm shadow-emerald-200">
                                                 <Check className="w-3 h-3 text-white" strokeWidth={3} />
                                             </div>
-                                            <span className="text-[13px] font-semibold text-gray-700 relative z-10">{cat.nexlance}</span>
+                                            <span className="text-[13px] font-semibold text-gray-700 relative z-10">{cat.nexlora}</span>
                                         </div>
 
                                         {/* Hiring */}
@@ -195,7 +195,7 @@ export default function ComparisonTable() {
                                 <div className="p-5 md:p-6" />
                                 <div className="p-5 md:p-6 flex justify-center relative">
                                     <div className="absolute inset-0 bg-blue-500/[0.02] pointer-events-none" />
-                                    <a href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true" target="_blank" rel="noopener noreferrer"
+                                    <a href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true" target="_blank" rel="noopener noreferrer"
                                         className="relative z-10 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white text-[12px] font-bold hover:bg-black transition-all hover:scale-[1.03] shadow-md">
                                         Get Started
                                         <ArrowRight className="w-3.5 h-3.5" />

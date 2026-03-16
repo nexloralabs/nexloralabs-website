@@ -4,13 +4,13 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Terms of Service — Nexlance.tech",
-    description: "Terms and conditions governing your use of Nexlance.tech's custom software development services and website.",
+    title: "Terms of Service | NexLora Labs",
+    description: "Read the terms and conditions for using NexLora Labs services and website.",
     alternates: { canonical: "/terms" },
     openGraph: {
-        title: "Terms of Service — Nexlance.tech",
-        description: "Terms and conditions governing your use of Nexlance.tech's custom software development services.",
-        url: "https://nexlance.tech/terms",
+        title: "Terms of Service — NexLora Labs",
+        description: "Terms and conditions governing your use of NexLora Labs's custom software development services.",
+        url: "https://nexloralabs.com/terms",
     },
 };
 
@@ -20,11 +20,11 @@ const sections = [
         items: [
             {
                 heading: "Agreement to Terms",
-                content: "By accessing or using the services provided by Nexlance.tech, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must not use our services. These terms apply to all visitors, clients, and others who access or use our services.",
+                content: "By accessing or using the services provided by NexLora Labs, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must not use our services. These terms apply to all visitors, clients, and others who access or use our services.",
             },
             {
                 heading: "Modifications",
-                content: "Nexlance.tech reserves the right to modify these terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services following any changes constitutes acceptance of the revised terms. We encourage you to review these terms periodically.",
+                content: "NexLora Labs reserves the right to modify these terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services following any changes constitutes acceptance of the revised terms. We encourage you to review these terms periodically.",
             },
         ],
     },
@@ -33,7 +33,7 @@ const sections = [
         items: [
             {
                 heading: "Scope of Services",
-                content: "Nexlance.tech provides custom software development services including but not limited to: web application development, mobile app development, SaaS platform development, AI and automation solutions, UI/UX design, branding, MVP prototyping, and digital marketing. The specific scope of work for each project will be defined in a separate project agreement or statement of work.",
+                content: "NexLora Labs provides custom software development services including but not limited to: web application development, mobile app development, SaaS platform development, AI and automation solutions, UI/UX design, branding, MVP prototyping, and digital marketing. The specific scope of work for each project will be defined in a separate project agreement or statement of work.",
             },
             {
                 heading: "Service Delivery",
@@ -50,7 +50,7 @@ const sections = [
             },
             {
                 heading: "Content and Materials",
-                content: "Clients are responsible for ensuring that all content, images, and materials provided to Nexlance.tech do not infringe on any third-party intellectual property rights. The client warrants that they have the necessary rights and permissions to use and share all provided materials.",
+                content: "Clients are responsible for ensuring that all content, images, and materials provided to NexLora Labs do not infringe on any third-party intellectual property rights. The client warrants that they have the necessary rights and permissions to use and share all provided materials.",
             },
         ],
     },
@@ -72,11 +72,11 @@ const sections = [
         items: [
             {
                 heading: "Ownership",
-                content: "Upon full payment, the client receives full ownership of all custom code, designs, and deliverables created specifically for their project. Nexlance.tech retains the right to use general knowledge, techniques, and non-proprietary components in future projects. Pre-existing tools, frameworks, and libraries remain the property of their respective owners.",
+                content: "Upon full payment, the client receives full ownership of all custom code, designs, and deliverables created specifically for their project. NexLora Labs retains the right to use general knowledge, techniques, and non-proprietary components in future projects. Pre-existing tools, frameworks, and libraries remain the property of their respective owners.",
             },
             {
                 heading: "Portfolio Rights",
-                content: "Nexlance.tech reserves the right to display completed projects in our portfolio, case studies, and marketing materials unless explicitly prohibited by a written confidentiality agreement. We may reference the client's name and a general description of the work performed.",
+                content: "NexLora Labs reserves the right to display completed projects in our portfolio, case studies, and marketing materials unless explicitly prohibited by a written confidentiality agreement. We may reference the client's name and a general description of the work performed.",
             },
         ],
     },
@@ -85,7 +85,7 @@ const sections = [
         items: [
             {
                 heading: "Liability Cap",
-                content: "Nexlance.tech's total liability for any claim arising from our services shall not exceed the total fees paid by the client for the specific project in question. We are not liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of revenue, data, or business opportunities.",
+                content: "NexLora Labs's total liability for any claim arising from our services shall not exceed the total fees paid by the client for the specific project in question. We are not liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of revenue, data, or business opportunities.",
             },
             {
                 heading: "Warranties",
@@ -98,7 +98,7 @@ const sections = [
         items: [
             {
                 heading: "Termination by Either Party",
-                content: "Either party may terminate the service agreement with 14 days written notice. Upon termination, the client is responsible for payment for all work completed up to the termination date. Nexlance.tech will provide all completed deliverables and work-in-progress files upon receiving final payment.",
+                content: "Either party may terminate the service agreement with 14 days written notice. Upon termination, the client is responsible for payment for all work completed up to the termination date. NexLora Labs will provide all completed deliverables and work-in-progress files upon receiving final payment.",
             },
         ],
     },
@@ -111,7 +111,7 @@ const sections = [
             },
             {
                 heading: "Contact",
-                content: "If you have any questions about these Terms of Service, please contact us at nexlance.tech@gmail.com or through the contact form on our website.",
+                content: "If you have any questions about these Terms of Service, please contact us at nexloralabs@gmail.com or through the contact form on our website.",
             },
         ],
     },

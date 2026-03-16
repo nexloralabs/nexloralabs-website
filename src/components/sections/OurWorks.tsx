@@ -133,7 +133,7 @@ export default function OurWorks() {
                                                 <div className="relative w-full aspect-[16/10]">
                                                     <Image
                                                         src={p.image}
-                                                        alt={`${p.title} — ${p.category} built by Nexlance.tech custom software development`}
+                                                        alt={`${p.title} — ${p.category} built by NexLora Labs custom software development`}
                                                         fill
                                                         sizes="(max-width: 768px) 100vw, 55vw"
                                                         className="object-cover object-top"

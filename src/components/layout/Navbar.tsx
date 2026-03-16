@@ -71,12 +71,13 @@ export default function Navbar() {
                         */}
                         <div className="relative w-[130px] sm:w-[160px] h-[48px] flex items-center ml-[-8px]">
                             <Image
-                                src="/logo.webp"
-                                alt="Nexlance.tech Logo"
+                                src="/logo.png"
+                                alt="NexLora Labs Logo"
                                 fill
                                 sizes="(max-width: 640px) 130px, 160px"
                                 className="object-contain object-left scale-[1.8] sm:scale-[2] origin-left"
                                 priority
+                                unoptimized
                             />
                         </div>
                     </Link>
@@ -162,7 +163,7 @@ export default function Navbar() {
                             {/* CTA */}
                             <div className="p-4">
                                 <a
-                                    href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                                    href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                                     target="_blank" rel="noopener noreferrer"
                                     onClick={() => setMobileOpen(false)}
                                     className="flex items-center justify-center gap-2 w-full py-4 rounded-2xl bg-gray-900 text-white font-bold text-[15px] hover:bg-black active:scale-[0.98] transition-all shadow-lg"
@@ -197,12 +198,13 @@ export default function Navbar() {
                     }}>
                         <div className="relative w-[210px] xl:w-[280px] h-[70px] xl:h-[90px] flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
                             <Image
-                                src="/logo.webp"
-                                alt="Nexlance.tech Logo"
+                                src="/logo.png"
+                                alt="NexLora Labs Logo"
                                 fill
                                 sizes="(max-width: 1280px) 210px, 280px"
                                 className="object-contain object-left scale-[1.25] origin-left"
                                 priority
+                                unoptimized
                             />
                         </div>
                     </Link>
@@ -255,7 +257,7 @@ export default function Navbar() {
 
                     {/* Book a Call */}
                     <a
-                        href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                        href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex group relative items-center gap-2 px-5 py-2.5 rounded-full text-white font-bold text-[13.5px] transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 bg-[#111827] border border-gray-800 hover:bg-black shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)]"

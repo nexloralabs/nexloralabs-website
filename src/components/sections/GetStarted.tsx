@@ -271,7 +271,7 @@ export default function GetStarted() {
                         </p>
                     </div>
                     <a
-                        href="https://cal.com/nexlance.tech/discovery-call?duration=30&overlayCalendar=true"
+                        href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group flex-shrink-0 inline-flex items-center gap-3 px-7 py-4 rounded-full text-white font-bold text-[14px] transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5"
