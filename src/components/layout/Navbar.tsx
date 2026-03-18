@@ -79,6 +79,7 @@ export default function Navbar() {
                                 sizes="(max-width: 640px) 130px, 160px"
                                 className="object-contain object-left scale-[1.8] sm:scale-[2] origin-left"
                                 priority
+                                loading="eager"
                                 unoptimized
                             />
                         </div>
@@ -207,6 +208,7 @@ export default function Navbar() {
                                 sizes="(max-width: 1280px) 210px, 280px"
                                 className="object-contain object-left scale-[1.25] origin-left"
                                 priority
+                                loading="eager"
                                 unoptimized
                             />
                         </div>
