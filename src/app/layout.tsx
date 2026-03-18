@@ -3,6 +3,7 @@ import { Playfair_Display, DM_Sans } from "next/font/google";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import Script from "next/script";
 import CookieConsent from "@/components/ui/CookieConsent";
+import FloatingContact from "@/components/layout/FloatingContact";
 import { GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 
@@ -387,7 +388,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
         <Script
           id="structured-data"
@@ -410,6 +411,7 @@ export default function RootLayout({
         <GoogleTagManager gtmId="GT-PZQ76JQF" />
         <MotionProvider>
           {children}
+          <FloatingContact />
           <CookieConsent />
         </MotionProvider>
       </body>
