@@ -9,6 +9,7 @@ import { m, AnimatePresence } from "framer-motion";
 const navLinks = [
     { name: "Services", href: "/#services" },
     { name: "Our Work", href: "/#work" },
+    { name: "Case Studies", href: "/case-studies" },
     { name: "Why Us", href: "/#why-us" },
     { name: "FAQs", href: "/#faq" },
     { name: "Contact", href: "/contact" },
@@ -63,6 +64,7 @@ export default function Navbar() {
                         if (window.location.pathname === '/') {
                             e.preventDefault();
                             window.scrollTo({ top: 0, behavior: "smooth" });
+                            window.history.pushState(null, '', '/');
                         }
                         setMobileOpen(false);
                     }}>
@@ -194,6 +196,7 @@ export default function Navbar() {
                         if (window.location.pathname === '/') {
                             e.preventDefault();
                             window.scrollTo({ top: 0, behavior: "smooth" });
+                            window.history.pushState(null, '', '/');
                         }
                     }}>
                         <div className="relative w-[210px] xl:w-[280px] h-[70px] xl:h-[90px] flex-shrink-0 transition-transform duration-300 group-hover:scale-105">

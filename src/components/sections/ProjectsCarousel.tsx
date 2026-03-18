@@ -223,7 +223,9 @@ export default function Projects() {
                             </div>
 
                             {/* CTA */}
-                            <a href="/contact"
+                            <a href="https://cal.com/nexloralabs.com/discovery-call?duration=30&overlayCalendar=true"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group inline-flex items-center gap-2.5 self-start px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all hover:scale-[1.03] active:scale-95 shadow-md"
                                 style={{ background: project.color, boxShadow: `0 8px 24px -4px ${project.color}40` }}>
                                 Start a Similar Project

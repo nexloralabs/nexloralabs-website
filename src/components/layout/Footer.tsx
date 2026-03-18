@@ -22,7 +22,7 @@ export default function Footer() {
         setIsSubmitting(true);
         try {
             const fd = new FormData();
-            fd.append("access_key", "12b3272b-2a01-4d5b-89c9-b432f15ebfbb");
+            fd.append("access_key", "0e7a3ebc-1673-47f9-a140-d742569f3603");
             fd.append("email", email);
             fd.append("subject", "New Newsletter Subscription | NexLora Labs");
             fd.append("from_name", "NexLora Labs Website");
@@ -99,6 +99,7 @@ export default function Footer() {
                             if (window.location.pathname === '/') {
                                 e.preventDefault();
                                 window.scrollTo({ top: 0, behavior: "smooth" });
+                                window.history.pushState(null, '', '/');
                             }
                         }}>
                             <div className="relative w-[240px] md:w-[460px] h-[60px] md:h-[120px] mb-2 md:-ml-4">

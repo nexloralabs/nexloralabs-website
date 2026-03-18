@@ -16,6 +16,7 @@ const projects = [
         accent: "#2563EB",
         stats: { delivery: "7 Days", rating: "5.0★" },
         image: "/tejedutech.webp",
+        link: "https://www.tejedutech.com/",
     },
     {
         title: "Rapid Reel Creations",
@@ -25,6 +26,7 @@ const projects = [
         accent: "#E11D48",
         stats: { delivery: "4 Days", rating: "5.0★" },
         image: "/rapidreel.webp",
+        link: "https://www.rapidreelcreations.com/",
     },
     {
         title: "Terminal.me",
@@ -34,6 +36,7 @@ const projects = [
         accent: "#059669",
         stats: { delivery: "10 Days", rating: "5.0★" },
         image: "/terminalme.webp",
+        link: "",
     },
 ];
 
@@ -92,15 +95,18 @@ export default function OurWorks() {
                         const isHovered = hovered === i;
                         const isEven = i % 2 === 0;
                         return (
-                            <m.div
+                            <m.a
                                 key={i}
+                                href={p.link || undefined}
+                                target={p.link ? "_blank" : undefined}
+                                rel={p.link ? "noopener noreferrer" : undefined}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-60px" }}
                                 transition={{ duration: 0.7, delay: i * 0.1, ease }}
                                 onMouseEnter={() => setHovered(i)}
                                 onMouseLeave={() => setHovered(null)}
-                                className="group relative rounded-2xl overflow-hidden cursor-pointer active:scale-[0.995] transition-all duration-300 border border-gray-100 bg-white shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
+                                className="group block relative rounded-2xl overflow-hidden cursor-pointer active:scale-[0.995] transition-all duration-300 border border-gray-100 bg-white shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
                             >
                                 <div className={`grid grid-cols-1 md:grid-cols-[1.1fr_1fr] ${!isEven ? "md:direction-rtl" : ""}`}
                                     style={!isEven ? { direction: "rtl" } : {}}>
@@ -195,7 +201,7 @@ export default function OurWorks() {
                                         </div>
                                     </div>
                                 </div>
-                            </m.div>
+                            </m.a>
                         );
                     })}
                 </div>
